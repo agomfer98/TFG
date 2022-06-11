@@ -80,7 +80,8 @@ namespace TFG
                         }
                         if (usuario.Tipo.Equals("Músico"))
                         {
-                            BuscarPartituras b = new BuscarPartituras();
+                            BuscarPartituras b = new BuscarPartituras(1);
+                          
                             b.ShowDialog();
                             label3.Text = "";
                         }

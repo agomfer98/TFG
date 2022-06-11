@@ -14,6 +14,7 @@ namespace TFG
 {
     public partial class BuscarPartituras : Form
     {
+        public int num = 0;
         private MySqlCommand Comando;
         private MySqlDataReader Leer;
         public static String CadenaConexion = "server=remotemysql.com;user id=jGrZrsWHux;password=mPl4x3OA5S;database=jGrZrsWHux";
@@ -23,6 +24,12 @@ namespace TFG
         public BuscarPartituras()
         {
             InitializeComponent();
+        }
+        public BuscarPartituras(int num1)
+        {
+            InitializeComponent();
+            num= num1;
+
         }
 
         private void BuscarPartituras_Load(object sender, EventArgs e)
@@ -42,6 +49,10 @@ namespace TFG
             }
             Conexion.Close();
 
+            if (num == 1)
+            {
+                dataGridView1.Columns[5].Visible = false;
+            }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
