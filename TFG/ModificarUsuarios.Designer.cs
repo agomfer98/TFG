@@ -348,8 +348,11 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "ModificarUsuarios";
-            this.Text = "ModificarUsuarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Modificar Componente";
             this.Load += new System.EventHandler(this.ModificarUsuarios_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,12 @@ namespace TFG
 {
     public partial class Inicio : Form
     {
+
+        private MySqlCommand Comando;
+        private MySqlDataReader Leer;
+        public static String CadenaConexion = "server=remotemysql.com;user id=jGrZrsWHux;password=mPl4x3OA5S;database=jGrZrsWHux";
+
+        public static MySqlConnection Conexion = new MySqlConnection(CadenaConexion);
         public Inicio()
         {
             InitializeComponent();
@@ -77,6 +84,11 @@ namespace TFG
 
         private void button3_Click(object sender, EventArgs e)
         {
+        }
+
+        private void Inicio_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Conexion.Close();
         }
     }
 }

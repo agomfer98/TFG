@@ -460,7 +460,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(895, 542);
+            this.tabPage2.Size = new System.Drawing.Size(867, 491);
             this.tabPage2.TabIndex = 1;
             // 
             // groupBox8
@@ -980,7 +980,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(895, 542);
+            this.tabPage3.Size = new System.Drawing.Size(867, 491);
             this.tabPage3.TabIndex = 2;
             // 
             // button9
@@ -1371,10 +1371,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(867, 492);
+            this.ClientSize = new System.Drawing.Size(864, 485);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimizeBox = false;
             this.Name = "CrearPartitura";
-            this.Text = "CrearPartitura";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Crear Partitura";
             this.Load += new System.EventHandler(this.CrearPartitura_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

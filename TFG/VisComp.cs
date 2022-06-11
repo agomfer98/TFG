@@ -83,7 +83,7 @@ namespace TFG
             try{
                 String nombre = dataGridView1.CurrentRow.Cells[0].Value.ToString();
                 String apellidos = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-                String mensaje = "¿Desea eliminar al componente" + nombre + " " + apellidos + "?";
+                String mensaje = "¿Desea eliminar al componente " + nombre + " " + apellidos + "?";
                 MessageBoxButtons button = MessageBoxButtons.YesNo;
                 DialogResult resultado = MessageBox.Show(mensaje, "", button);
 
